@@ -1,0 +1,100 @@
+.character-sheet {
+  padding: 20px;
+  color: white;
+  background-color: #1a1d21;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  margin: 20px;
+  box-shadow: 
+    0 0 0 1px rgba(255, 255, 255, 0.1),
+    inset 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.character-content {
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+  width: 100%;
+}
+
+/* Section styling for the boxes */
+.attributes-section,
+.classes-section,
+.skills-section,
+.class-requirements-section {
+  flex: 1;
+  min-height: 200px;
+  background-color: #22262a;
+  border: 1px solid white;
+  padding: 20px;
+}
+
+/* Header styling */
+.attributes-section h3,
+.classes-section h3,
+.skills-section h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+/* Row styling */
+.attribute-row, .skill-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0;
+  padding: 5px;
+}
+
+/* Button styling */
+button {
+  background-color: #333;
+  color: white;
+  border: 1px solid #444;
+  border-radius: 4px;
+  padding: 2px 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+/* Class item styling */
+.class-item {
+  margin: 5px 0;
+}
+
+
+.class-item.meets-requirements {
+  color: red;
+}
+
+/* Skills section specific */
+.skills-section {
+  overflow-y: auto;
+}
+
+.skills-section > div:first-of-type {
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #444;
+}
+
+/* Modifier and total values styling */
+.modifier-value, .total-value {
+  color: #888;
+  font-size: 0.9em;
+}
+
+.classes-section {
+  min-width: 120px;
+}
+
+.class-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
